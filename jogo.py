@@ -151,17 +151,17 @@ class JogoAdivinhacao(Jogo):
     self.ranking()
 
 def validar_entrada(tipo, opcoes, mensagem):
-    while True:
-      try:
-        entrada = tipo(input(mensagem))
-        if entrada in opcoes:
-          break
-        else:
-          raise ValueError
-      except:
-        print("Entrada Inválida. Tente Novamente...")
-        continue
-    return entrada
+  while True:
+    try:
+      entrada = tipo(input(mensagem))
+      if entrada in opcoes:
+        break
+      else:
+        raise ValueError
+    except:
+      print("Entrada Inválida. Tente Novamente...")
+      continue
+  return entrada
 
 # Loop para jogar várias vezes
 def executar_jogo(jogo: Jogo):
