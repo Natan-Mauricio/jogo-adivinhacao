@@ -21,11 +21,13 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 ## 🏗️ Estrutura do Projeto
 
 - **`O projeto segue uma arquitetura orientada a objetos, desenvolvido aplicando boas práticas de programação, como`**:
+
   - `Abstração`: Classe base `Jogo` define métodos genéricos como `iniciar()` e `jogar()`.
   - `Encapsulamento`: Uso de atributos privados como `__numero_secreto`.
   - `Herança`: Classe `JogoAdivinhacao` herda da classe `Jogo`.
   - `Polimorfismo`: Métodos `iniciar()` e `jogar()` são implementados de formas diferentes.
   - `Princípios SOLID`: Aplicação de princípios como SRP, OCP, LSP, ISP e DIP.
+    
 - **`E com as seguintes classes`**:
 
 ## Classes Principais
@@ -52,8 +54,10 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 ## 📊 Sistema de Pontuação
 
 - **`A pontuação é calculada pela fórmula`**:
+  
   - Pontos = PontosBase(tentativa) × Dificuldade
 - **`Onde`**:
+  
   - PontosBase: 130, 120, 110, 100, 90, 80, 80, 70, 60, 50, 40, 30, 20, 10, 5 (respectivamente da 1ª à 15ª tentativa)
   - Dificuldade: 1 (Fácil), 2 (Médio), 3 (Difícil)
 
@@ -171,10 +175,15 @@ Continuar? (s/n): n
 
 ## Instalação
 - **`1. Clone o repositório`**:
+
 ```bash
-  - git clone https://github.com/seu-usuario/jogo-adivinhacao.git
+  git clone https://github.com/seu-usuario/jogo-adivinhacao.git
+```
 - **`2. Execute`**:
-  - cd jogo-adivinhacao
+
+```bash
+  cd jogo-adivinhacao
+```
 
 ## 🎯 Melhorias Futuras
 
