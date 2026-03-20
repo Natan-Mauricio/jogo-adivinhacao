@@ -171,7 +171,7 @@ Continuar? (s/n): n
 
 ## Instalação
 - **`1. Clone o repositório`**:
-  - ```bash
+```bash
   - git clone https://github.com/seu-usuario/jogo-adivinhacao.git
 - **`2. Execute`**:
   - cd jogo-adivinhacao
