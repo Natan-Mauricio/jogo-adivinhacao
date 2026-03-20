@@ -1,4 +1,4 @@
-[a.txt](https://github.com/user-attachments/files/26139713/a.txt)# 🎮 Jogo da Adivinhação
+# 🎮 Jogo da Adivinhação
 
 Projeto simples desenvolvido em Python utilizando conceitos de Programação Orientada a Objetos (POO) e princípios SOLID.
 
@@ -59,7 +59,8 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 
 ## 💡 Exemplo de Jogo
 
-[Uplo============================================================
+'''
+============================================================
              =====< JOGO DA ADIVINHAÇÃO >=====              
 ============================================================
                         Como jogar:                         
@@ -160,8 +161,8 @@ Tentativas usadas: 5
 1º Natan - 350
 2º Jorge - 180
 ============================================================
-Continuar? (s/n): nading a.txt…]()
-
+Continuar? (s/n): n
+'''
 
 ## 🚀 Como Executar
 
