@@ -59,7 +59,7 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 
 ## 💡 Exemplo de Jogo
 
-'''
+```
 ============================================================
              =====< JOGO DA ADIVINHAÇÃO >=====              
 ============================================================
@@ -162,7 +162,7 @@ Tentativas usadas: 5
 2º Jorge - 180
 ============================================================
 Continuar? (s/n): n
-'''
+```
 
 ## 🚀 Como Executar
 
