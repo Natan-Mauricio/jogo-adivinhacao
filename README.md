@@ -54,12 +54,12 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 ## 📊 Sistema de Pontuação
 
 - **`A pontuação é calculada pela fórmula`**:
-  
-  - Pontos = PontosBase(tentativa) × Dificuldade
+  - Pontos = (10 + (15 - tentativas) × 10) × Dificuldade
+    
 - **`Onde`**:
-  
-  - PontosBase: 130, 120, 110, 100, 90, 80, 80, 70, 60, 50, 40, 30, 20, 10, 5 (respectivamente da 1ª à 15ª tentativa)
   - Dificuldade: 1 (Fácil), 2 (Médio), 3 (Difícil)
+  - 10 é a menor pontuação possível (15 tentativas no fácil)
+  - 450 é a maior pontuação possível (1 tentativa no difícil)
 
 ## 💡 Exemplo de Jogo
 
@@ -74,43 +74,10 @@ O Jogo da Adivinhação é uma implementação orientada a objetos que desafia o
 1. Fácil -> 15 tentativas
 2. Médio -> 10 tentativas
 3. Difícil -> 5 tentativas
-Escolha (1 a 3): 3
-============================================================
-                          Jogador:                          
-Digite seu nome: Natan
-============================================================
-                        Advinhação:                         
-Tentativa 1: 50
-O número secreto é menor.
-Tentativa 2: 25
-O número secreto é maior.
-Tentativa 3: 35
-O número secreto é maior.
-Tentativa 4: 42
-O número secreto é maior.
-Tentativa 5: 46
-============================================================
-Parabéns! Você acertou!
-Tentativas usadas: 5
-============================================================
-                          Ranking:                          
-1º Natan - 270
-============================================================
-Continuar? (s/n): s
-============================================================
-             =====< JOGO DA ADIVINHAÇÃO >=====              
-============================================================
-                        Como jogar:                         
-       Tente adivinhar o número secreto entre 1 e 100       
-============================================================
-                        Dificuldade:                        
-1. Fácil -> 15 tentativas
-2. Médio -> 10 tentativas
-3. Difícil -> 5 tentativas
 Escolha (1 a 3): 1
 ============================================================
                           Jogador:                          
-Digite seu nome: Natan
+Digite seu nome: Maria
 ============================================================
                         Advinhação:                         
 Tentativa 1: 50
@@ -119,17 +86,17 @@ Tentativa 2: 75
 O número secreto é maior.
 Tentativa 3: 85
 O número secreto é maior.
-Tentativa 4: 95
-O número secreto é menor.
-Tentativa 5: 90
+Tentativa 4: 90
 O número secreto é maior.
-Tentativa 6: 92
+Tentativa 5: 95
+O número secreto é maior.
+Tentativa 6: 97
 ============================================================
 Parabéns! Você acertou!
 Tentativas usadas: 6
 ============================================================
                           Ranking:                          
-1º Natan - 350
+1º Maria - 100
 ============================================================
 Continuar? (s/n): s
 ============================================================
@@ -145,25 +112,63 @@ Continuar? (s/n): s
 Escolha (1 a 3): 2
 ============================================================
                           Jogador:                          
-Digite seu nome: Jorge
+Digite seu nome: Pedro
 ============================================================
                         Advinhação:                         
 Tentativa 1: 50
-O número secreto é menor.
-Tentativa 2: 25
-O número secreto é menor.
-Tentativa 3: 15
-O número secreto é menor.
-Tentativa 4: 10
 O número secreto é maior.
-Tentativa 5: 13
+Tentativa 2: 75
+O número secreto é maior.
+Tentativa 3: 85
+O número secreto é maior.
+Tentativa 4: 95
+O número secreto é menor.
+Tentativa 5: 90
+O número secreto é maior.
+Tentativa 6: 93
 ============================================================
 Parabéns! Você acertou!
-Tentativas usadas: 5
+Tentativas usadas: 6
 ============================================================
                           Ranking:                          
-1º Natan - 350
-2º Jorge - 180
+1º Pedro - 200
+2º Maria - 100
+============================================================
+Continuar? (s/n): s
+============================================================
+             =====< JOGO DA ADIVINHAÇÃO >=====              
+============================================================
+                        Como jogar:                         
+       Tente adivinhar o número secreto entre 1 e 100       
+============================================================
+                        Dificuldade:                        
+1. Fácil -> 15 tentativas
+2. Médio -> 10 tentativas
+3. Difícil -> 5 tentativas
+Escolha (1 a 3): 3
+============================================================
+                          Jogador:                          
+Digite seu nome: João
+============================================================
+                        Advinhação:                         
+Tentativa 1: 50
+O número secreto é maior.
+Tentativa 2: 75
+O número secreto é maior.
+Tentativa 3: 90
+O número secreto é menor.
+Tentativa 4: 83
+O número secreto é maior.
+Tentativa 5: 86
+O número secreto é menor.
+============================================================
+Suas tentativas acabaram!
+O número secreto era: 85
+============================================================
+                          Ranking:                          
+1º Pedro - 200
+2º Maria - 100
+3º João - 0
 ============================================================
 Continuar? (s/n): n
 ```
