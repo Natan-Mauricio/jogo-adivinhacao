@@ -104,14 +104,9 @@ class JogoAdivinhacao(Jogo):
 # Sistema de pontuação baseado em desempenho
   def pontuar(self, acertou):
     # Acertos: Pontos
-    tabela = {
-    1: 130, 2: 120, 3: 110, 4: 100, 5: 90,
-    6: 80, 7: 80, 8: 70, 9: 60, 10: 50,
-    11: 40, 12: 30, 13: 20, 14: 10, 15: 5
-    }
     if acertou:
       # Pontuação depende de tentativas e dificuldade
-        pontos = tabela.get(self.__tentativas) * self.__dificuldade
+        pontos = int(10 + (15 - self.__tentativas) * 10) * self.__dificuldade
     else:
         pontos = 0
 
