@@ -15,11 +15,9 @@ class Jogo(ABC):
   def pontuar(self):
     pass
 
-  @abstractmethod
   def ranking(self):
     pass
 
-  @abstractmethod
   def escolher_dificuldade(self):
     pass
 
