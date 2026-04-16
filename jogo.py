@@ -68,9 +68,9 @@ class Ranking():
 
 class JogoAdivinhacao(Jogo):
 
-  def __init__(self, nome):
-    self.__jogador = Jogador(nome, 0)
-    self.__ranking = Ranking([])
+  def __init__(self, jogador: Jogador, ranking: Ranking):
+    self.__jogador = jogador
+    self.__ranking = ranking
     self.__numero_secreto = 0 # Aleatório (1 a 100)
     self.__tentativas = 0 # De acordo com as tentativas do Jogador
     self.__limite = 0 # Depende da dificuldade
@@ -171,5 +171,7 @@ def executar_jogo(jogo: Jogo):
     jogo.jogar()
     escolha = validar_entrada(str, ['s', 'S', 'n', 'N'], 'Continuar? (s/n): ')
 
-jogo = JogoAdivinhacao("Nome")
+jogador = Jogador("Nome", 0)
+ranking = Ranking([])
+jogo = JogoAdivinhacao(jogador, ranking)
 executar_jogo(jogo)
